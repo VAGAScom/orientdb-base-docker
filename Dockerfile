@@ -7,7 +7,7 @@
 # http://crosbymichael.com/dockerfile-best-practices-take-2.html
 ############################################################
 
-FROM sdorra/oracle-java-8:latest
+FROM sdorra/oracle-java-8
 
 MAINTAINER Ronie Uliana (ronie.uliana@gmail.com)
 
@@ -18,7 +18,7 @@ RUN apt-get update
 # https://www.digitalocean.com/community/tutorials/how-to-install-and-use-orientdb-on-an-ubuntu-12-04-vps
 RUN apt-get -y install git ant
 
-ENV ORIENTDB_VERSION 2.0.14
+ENV ORIENTDB_VERSION 2.0.10
 
 # Build OrientDB cleaning up afterwards
 RUN cd && \
